@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+.pc-wrapper{
+  max-width: 1440px;
+}
+
 img {
   width: 100%;
 }
@@ -31,7 +35,6 @@ header {
 
   .background {
     padding-top: 50px;
-    max-width: 1800px;
     margin: 0 auto;
   }
 
@@ -174,7 +177,6 @@ header {
 }
 
 .solution {
-  max-width: 1440px;
   padding: 200px 12px 0;
   margin: 0 auto;
 
@@ -367,7 +369,6 @@ header {
 }
 
 .section2-width {
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -464,7 +465,6 @@ header {
 
 /* section3 */
 .section3 {
-  max-width: 1440px;
   margin: 0 auto;
 
   span {
@@ -545,7 +545,6 @@ header {
 
 /* section4 */
 .section4 {
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -660,8 +659,8 @@ header {
 }
 
 .section5 {
-  max-width: 1000px;
   margin: 0 auto;
+  max-width: 1000px;
   text-align: center;
 
   h1 {
@@ -687,14 +686,14 @@ header {
   .rectangle-bg {
     background: #E1E1E1;
     border-radius: 10px;
-    width: 1000px;
+    width: 100%;
     height: 400px;
     position: relative;
     margin: 64px auto 0;
   }
 
   .rectangle {
-    width: 950px;
+    width: 95%;
     height: 350px;
     margin: 0 auto;
     background: white;
@@ -824,12 +823,12 @@ footer {
     }
 
     .text-1 {
-      max-width: 330px;
+      width: 100%;
       height: 40px;
     }
 
     .text-2 {
-      width: 350px;
+      width: 100%;
       height: 50px;
       padding: 8px 10px;
     }
@@ -959,11 +958,9 @@ footer {
       }
 
       .text-img {
-        width: 250px;
-        height: 90px;
+        width: 90%;
+        height: 50%;
         position: relative;
-        margin-right: 24px;
-
       }
 
 
@@ -979,19 +976,20 @@ footer {
         border-bottom: 20px solid transparent;
         border-left: 30px solid #ECECEC;
         position: absolute;
-        top: 50%;
-        right: -15%;
+        top: 55%;
+        right: -25%;
+        transform: translate(-50%,-50%);
       }
 
       .item-img-1 {
-        width: 80px;
+        max-width: 80px;
         height: 85px;
         margin: 0 auto;
       }
 
       .item-img-2,
       .item-img-3 {
-        width: 100px;
+        max-width: 100px;
         height: 73px;
         margin: 0 auto;
         display: inline-block;
@@ -1007,8 +1005,9 @@ footer {
     border-bottom: 20px solid transparent;
     border-right: 30px solid #ECECEC;
     position: absolute;
-    top: 50%;
-    left: -23%;
+    top: 55%;
+    left: -15%;
+    transform: translate(-50%,-50%);
   }
 
 
@@ -1027,6 +1026,8 @@ footer {
 
       .bg-item-1 {
         margin-right: 0;
+        max-width: 100%;
+        height: 100%;
       }
 
       .img-flex {
@@ -1059,11 +1060,6 @@ footer {
       display: none;
     }
 
-    .bg-img-1 {
-      width: 400px;
-      height: 350px;
-      margin: 0 auto;
-    }
 
   }
 
