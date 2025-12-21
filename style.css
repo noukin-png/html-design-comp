@@ -1009,7 +1009,7 @@ footer {
 
   .bg-img-1 {
     width: 400px;
-    height: 400px;
+    margin: 0 20px;
   }
 
   .bg-text {
@@ -1172,7 +1172,7 @@ footer {
     .rectangle-bg {
       height: 750px;
       width: 400px;
-      margin: 32px auto;
+      margin: 32px 0;
     }
 
     .rectangle {
