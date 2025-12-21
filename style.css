@@ -1164,6 +1164,14 @@ footer {
 .comparison-text {
   letter-spacing: 1px;
   padding: 0 20px;
+
+  &:nth-child(2){
+    font-size: 14px;
+  }
+
+  .span-2{
+    font-size: 16px;
+  }
 }
 
 .comparison-tb {
@@ -1179,6 +1187,7 @@ table {
 }
 
 .section5 {
+  max-width: 440px;
 
   h1 {
     font-size: 18px;
