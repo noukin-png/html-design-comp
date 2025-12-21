@@ -1138,6 +1138,8 @@ footer {
 
   .section5{
     width: 440px;
+    margin: 0 auto;
+    padding: 0 20px;
     .rectangle-text{
     background: linear-gradient(transparent 90%, #FFE880 50%);
   }
@@ -1151,6 +1153,7 @@ footer {
 
   .comparison-text{
     letter-spacing: 1px;
+    padding: 0 20px;
   }
 
   .comparison-tb{
