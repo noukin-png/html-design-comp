@@ -939,6 +939,7 @@ footer {
       width: 100%;
       margin: 64px auto 0;
       display: flex;
+      align-items: center;
 
       &:nth-of-type(2) {
         flex-direction: row-reverse;
@@ -1007,6 +1008,7 @@ footer {
   }
 
   .bg-img-1 {
+    width: 400px;
     height: 400px;
   }
 
@@ -1017,7 +1019,7 @@ footer {
   .bg {
     .bg-text {
       padding: 0 12px;
-      width: 400px;
+      width: 100%;
 
       p {
         line-height: 2;
@@ -1128,10 +1130,11 @@ footer {
   }
 
   .rectangle {
-    max-width: 100%;
+    width: 100%;
   }
 
   .section5{
+    width: 440px;
     .rectangle-text{
     background: linear-gradient(transparent 90%, #FFE880 50%);
   }
