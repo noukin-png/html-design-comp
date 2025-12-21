@@ -289,7 +289,6 @@ header {
 
   .bg-text {
     display: flex;
-    justify-content: space-between;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -297,7 +296,7 @@ header {
     width: 100%;
     height: 350px;
     align-items: center;
-    padding: 0 64px;
+    margin: 0 64px;
 
     .bg-item-1 {
       margin-right: 32px;
@@ -1016,17 +1015,20 @@ footer {
     margin: 0 auto;
   }
 
-  .bg-text {
-    padding: 0;
-  }
+  
 
   .bg {
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
 
     .bg-text {
+    padding: 0;
+    margin: 0;
+  }
+
+    .bg-text {
       padding: 0 12px;
-      width: 100%;
+      max-width: 100%;
 
       p {
         line-height: 2;
