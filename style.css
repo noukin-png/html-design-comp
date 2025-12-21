@@ -653,11 +653,10 @@ header {
 .section5-bg {
   background: rgb(253, 241, 217);
   padding: 100px 0;
-  margin: 0 auto;
 }
 
 .section5 {
-  max-width: 1000px;
+  width: 1000px;
   margin: 0 auto;
   text-align: center;
 
@@ -1053,7 +1052,7 @@ footer {
     }
 
     .bg-img-1 {
-      width: 100%;
+      width: 400px;
       height: 350px;
       margin: 0 auto;
     }
@@ -1149,8 +1148,7 @@ footer {
 }
 
 .section5 {
-  max-width: 440px;
-  width: 100%;
+  width: 440px;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -1188,13 +1186,13 @@ table {
 
   .rectangle-bg {
     height: 750px;
-    width: 100%;
+    width: 400px;
     margin: 32px 0;
   }
 
   .rectangle {
     height: 700px;
-    width: calc(100% - 50px);
+    width: 350px;
     margin: 0 auto;
   }
 
