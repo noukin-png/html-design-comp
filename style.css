@@ -176,6 +176,7 @@ header {
 .solution {
   max-width: 1440px;
   padding-top: 200px;
+  margin: 0 auto;
 
 
   .solution-img {
@@ -923,7 +924,8 @@ footer {
   }
 
   .solution {
-    padding: 0 32px;
+    margin: 0 auto;
+    width: 440px;
 
     .solution-img {
       .img-text {
