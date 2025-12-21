@@ -1017,6 +1017,7 @@ footer {
   }
 
   .bg {
+    margin: 0 auto;
     .bg-text {
       padding: 0 12px;
       width: 100%;
