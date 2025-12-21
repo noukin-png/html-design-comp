@@ -420,8 +420,8 @@ header {
 
 
   .st-text {
-    display: flex;
     flex-direction: column;
+    width: 100%;
 
     p {
       &:nth-child(1) {
@@ -432,8 +432,8 @@ header {
       &:nth-child(2) {
         font-size: 18px;
         text-align: left;
-        width: 364px;
         letter-spacing: 1px;
+        width: 364px;
       }
 
     }
@@ -1092,7 +1092,8 @@ footer {
 
     .st-text {
       text-align: left;
-
+      max-width: 364px;
+      
       p {
         &:nth-child(1) {
           font-size: 16px;
@@ -1100,8 +1101,6 @@ footer {
 
         &:nth-child(2) {
           font-size: 14px;
-          text-align: left;
-          width: 364px;
           letter-spacing: 1px;
           margin-top: 18px;
         }
