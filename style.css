@@ -1009,7 +1009,7 @@ footer {
 
 
   .bg {
-    width: 400px;
+    max-width: 100%;
     margin: 0 auto;
 
     .bg-text {
@@ -1053,7 +1053,7 @@ footer {
     }
 
     .bg-img-1 {
-      width: 400px;
+      width: 100%;
       height: 350px;
       margin: 0 auto;
     }
@@ -1149,7 +1149,8 @@ footer {
 }
 
 .section5 {
-  width: 440px;
+  max-width: 440px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -1187,13 +1188,13 @@ table {
 
   .rectangle-bg {
     height: 750px;
-    width: 400px;
+    width: 100%;
     margin: 32px 0;
   }
 
   .rectangle {
     height: 700px;
-    width: 350px;
+    width: calc(100% - 50px);
     margin: 0 auto;
   }
 
