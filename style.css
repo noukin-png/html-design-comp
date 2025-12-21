@@ -834,6 +834,7 @@ footer {
     .text-3 {
       font-size: 18px;
       letter-spacing: 5px;
+      padding: 0 12px;
     }
 
     .img {
@@ -904,7 +905,7 @@ footer {
         margin: 64px auto 0;
 
         img {
-          max-width: 150px;
+          width: 150px;
           height: 131px;
         }
       }
@@ -941,12 +942,18 @@ footer {
 
       &:nth-of-type(2) {
         flex-direction: row-reverse;
+
+        .text-img{
+          margin-left: 24px;
+        }
       }
 
       .text-img {
         width: 250px;
         height: 90px;
         position: relative;
+        margin-right: 24px;
+
       }
 
 
@@ -1010,6 +1017,7 @@ footer {
   .bg {
     .bg-text {
       padding: 0 12px;
+      width: 400px;
 
       p {
         line-height: 2;
@@ -1123,6 +1131,14 @@ footer {
     max-width: 100%;
   }
 
+  .section5{
+    .rectangle-text{
+    background: linear-gradient(transparent 90%, #FFE880 50%);
+  }
+  
+
+  }
+
   .rectangle-flex {
     flex-direction: column;
   }
@@ -1144,6 +1160,7 @@ footer {
   }
 
   .section5 {
+    padding: 20px;
 
     h1 {
       font-size: 18px;
