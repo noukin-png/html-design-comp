@@ -925,7 +925,7 @@ footer {
 
   .solution {
     margin: 0 auto;
-    width: 440px;
+    max-width: 440px;
 
     .solution-img {
       .img-text {
