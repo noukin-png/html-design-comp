@@ -1018,7 +1018,7 @@ footer {
   
 
   .bg {
-    max-width: 400px;
+    min-width: 400px;
     margin: 0 auto;
 
     .bg-text {
@@ -1028,7 +1028,7 @@ footer {
 
     .bg-text {
       padding: 0 12px;
-      max-width: 100%;
+      min-width: 100%;
 
       p {
         line-height: 2;
