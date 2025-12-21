@@ -1163,7 +1163,7 @@ footer {
 
 .comparison-text {
   letter-spacing: 1px;
-  padding: 0 20px;
+  padding: 0 10px;
 
   &:nth-child(2){
     font-size: 14px;
@@ -1191,6 +1191,7 @@ table {
 
   h1 {
     font-size: 18px;
+    text-align: center;
   }
 
   .rectangle-bg {
