@@ -32,6 +32,7 @@ header {
   .background {
     padding-top: 50px;
     max-width: 1800px;
+    margin: 0 auto;
   }
 
   .text-1,
@@ -280,9 +281,11 @@ header {
     margin: 0 auto;
     position: relative;
 
-    img {
+    .bg-img{
+      background-color: #d9d9d9;
       width: 100%;
-      height: 350px;
+      height: min(100%,400px);
+      padding: 16px;
     }
   }
 
@@ -357,13 +360,15 @@ header {
 
 .section2 {
   text-align: center;
-  margin-top: 50px;
+  margin: 50px 0 0;
   padding-bottom: 64px;
   background: #E4EDF6;
+  
 }
 
 .section2-width {
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 
@@ -541,6 +546,7 @@ header {
 /* section4 */
 .section4 {
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .comparison {
@@ -780,7 +786,6 @@ header {
 /* footer */
 footer {
   background: #FFF0DF;
-  max-width: 1440px;
 
   .footer-text {
     width: 330px;
@@ -1190,7 +1195,7 @@ table {
 }
 
 .section5 {
-  max-width: 440px;
+  /* max-width: 440px; */
 
   h1 {
     font-size: 18px;
@@ -1207,6 +1212,7 @@ table {
     height: 700px;
     max-width: 350px;
     margin: 0 auto;
+    padding: 0;
   }
 
   .triangles {
