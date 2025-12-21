@@ -656,7 +656,7 @@ header {
 }
 
 .section5 {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 
@@ -1148,7 +1148,7 @@ footer {
 }
 
 .section5 {
-  width: 440px;
+  max-width: 440px;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -1196,13 +1196,13 @@ table {
 
   .rectangle-bg {
     height: 750px;
-    width: 400px;
+    max-width: 400px;
     margin: 32px 0;
   }
 
   .rectangle {
     height: 700px;
-    width: 350px;
+    max-width: 350px;
     margin: 0 auto;
   }
 
