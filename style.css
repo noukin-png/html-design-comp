@@ -1071,22 +1071,23 @@ footer {
   }
 
   .st-flex-item {
+    margin: 64px auto 0;
     .flex-img-1 {
       max-width: 230px;
       height: 185px;
-      margin-right: 64px;
+      margin: 0;
     }
 
     .flex-img-2 {
       width: 230px;
       height: 168px;
-      margin-left: 64px;
+      margin: 0;
     }
 
     .flex-img-3 {
       width: 230px;
       height: 168px;
-      margin-right: 64px;
+      margin: 0;
     }
 
     .st-text {
