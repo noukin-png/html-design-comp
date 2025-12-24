@@ -670,10 +670,10 @@ header {
 
   .triangles {
     display: flex;
-    gap: 10px;
-    max-width: 100%;
+    width: min(100%,120px);
     margin: 0 32px;
-    justify-content: space-between;
+    align-items: center;
+    gap: 10px ;
   }
 
   .triangle {
@@ -1225,6 +1225,8 @@ footer {
 
     .triangles {
       flex-direction: column;
+      margin: 0;
+      gap: 0;
     }
 
     .triangle {
