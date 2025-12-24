@@ -290,6 +290,7 @@ header {
       width: 100%;
       height: min(100%, 400px);
       padding: 16px;
+      border-radius: 5%;
     }
   }
 
@@ -827,16 +828,18 @@ footer {
     }
 
     .text-1 {
-      width: 77%;
+      max-width: 330px;
       height: 40px;
-      box-sizing: border-box;
-      padding: 4px;
+      margin: 0 auto;
+      line-height: 40px;
+      padding: 0;
     }
 
     .text-2 {
-      width: 83%;
+      max-width: 350px;
       height: 50px;
-      padding: 4px 8px;
+      padding: 4px;
+      margin: 32px auto 0;
       text-align: left;
     }
 
