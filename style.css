@@ -45,6 +45,7 @@ header {
     font-size: 1.6rem;
     letter-spacing: 3px;
     margin: 0 auto;
+    text-align: center;
 
     span {
       color: orange;
@@ -62,6 +63,7 @@ header {
     max-width: 700px;
     margin-top: 32px;
     background: white;
+    text-align: left;
   }
 
   .text-3 {
@@ -744,7 +746,7 @@ header {
 
     .before-text {
       margin-top: 20px;
-      padding: 0 18px;
+      padding: 0 12px;
     }
 
   }
@@ -801,7 +803,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
   /* header */
   header {
@@ -822,21 +824,20 @@ footer {
     .text-2 {
       font-size: 14px;
       letter-spacing: 2px;
-      padding: 0 8px;
     }
 
     .text-1 {
-      width: 75%;
+      width: 77%;
       height: 40px;
-      text-align: center;
-      line-height: 40px;
+      box-sizing: border-box;
+      padding: 4px;
     }
 
     .text-2 {
-      width: 80%;
+      width: 83%;
       height: 50px;
       padding: 4px 8px;
-      line-height: 22px;
+      text-align: left;
     }
 
     .text-3 {
@@ -1200,14 +1201,16 @@ footer {
       text-align: center;
     }
 
+
     .rectangle-bg {
-      height: 750px;
+      min-height: 750px;
+      height: auto;
       max-width: 400px;
       margin: 32px 0;
     }
 
     .rectangle {
-      height: 700px;
+      height: 92%;
       max-width: 350px;
       margin: 0 auto;
       padding: 32px 10px;
@@ -1254,7 +1257,6 @@ footer {
 
       .before-text {
         font-size: 16px;
-        padding: 0 18px;
       }
     }
 
