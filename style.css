@@ -711,8 +711,6 @@ header {
   }
 
   .rectangle-text {
-    max-width: 500px;
-    margin: 0 auto;
     display: inline;
 
     .marker {
@@ -747,7 +745,6 @@ header {
     .before-text {
       margin-top: 20px;
       padding: 0 18px;
-      height: auto;
     }
 
   }
@@ -772,10 +769,8 @@ header {
 
   .rectangle-flex {
     display: flex;
-    height: 60%;
     align-items: center;
     margin: 5% auto;
-    justify-content: center;
   }
 }
 
@@ -1216,9 +1211,14 @@ footer {
 
     }
 
+
+
     .rectangle-text {
       font-size: 18px;
-      font-weight: normal;
+    }
+
+    .rectangle-flex{
+      margin-top: 32px;
     }
 
 
