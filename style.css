@@ -30,7 +30,7 @@ header {
 
 /* section1 */
 .section1 {
-  margin: 0 auto;
+  margin: 0 auto 220px;
   background: rgb(253, 241, 217);
 
   .background {
@@ -165,7 +165,7 @@ header {
 
 .background-triangle {
   position: relative;
-  width: 100%;
+  max-width: 1440px;
 
   &::after {
     content: "";
@@ -179,8 +179,8 @@ header {
 }
 
 .solution {
-  padding: 200px 12px 0;
-  margin: 0 auto;
+  padding: 0 12px 0;
+  margin: 0 auto 50px;
 
 
   .solution-img {
@@ -221,20 +221,18 @@ header {
 }
 
 .solution-flex {
-  margin-top: 32px;
-  margin-bottom: 64px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 32px auto 64px;
 
   .item {
     width: 25%;
     margin: 0 auto;
 
     .text-img {
-      width: 300px;
-      height: 120px;
       position: relative;
     }
+
 
     span {
       color: #FF834E;
@@ -242,24 +240,26 @@ header {
     }
 
     p {
-      width: 90%;
+      background: #ECECEC;
+      border-radius: 5px;
+      width: 100%;
+      height: auto;
       font-weight: normal;
-      font-size: 1.0rem;
-      text-align: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      padding: 24px 8px;
+      overflow: auto;
     }
 
     .item-triangle {
-      width: 20px;
-      height: 20px;
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent;
-      border-top: 20px solid #ECECEC;
-      margin-top: -10px;
-      margin-left: 40px;
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #ECECEC;
+      top: 100%;
+      left: 20%;
     }
 
     .item-img-1 {
@@ -281,32 +281,25 @@ header {
 
   .bg-img-1 {
     max-width: 1000px;
-    height: 350px;
+    height: auto;
     margin: 0 auto;
-    position: relative;
 
     .bg-img {
-      background-color: #d9d9d9;
+      background-color: #ECECEC;
       width: 100%;
-      height: min(100%, 400px);
-      padding: 16px;
-      border-radius: 5%;
+      height: auto;
+      /* height: min(100%, 400px); */
+      padding: 32px 0;
+      border-radius: 20px;
     }
   }
 
   .bg-text {
     display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 350px;
+    width: 95%;
     align-items: center;
+    padding: 0 60px;
 
-    .bg-item-1 {
-      margin-right: 32px;
-    }
 
     p {
       text-align: start;
@@ -351,21 +344,22 @@ header {
 
   span {
 
-    &:nth-of-type(1) {
-      font-size: 25px;
+    &:nth-child(1) {
+      font-size: 28px;
     }
 
     &:nth-child(2) {
       color: #FF834E;
     }
   }
+
 }
 
 /* section2 */
 
 .section2 {
   text-align: center;
-  margin: 50px 0 0;
+  margin: 0;
   padding-bottom: 64px;
   background: #E4EDF6;
 
@@ -380,20 +374,14 @@ header {
   background: #E4EDF6;
   padding-top: 64px;
 
-  .st-img {
-    width: 250px;
-    height: 30px;
-    position: relative;
-    margin: 0 auto;
-  }
-
   .img-title {
+    background: #0161AD;
+    max-width: 250px;
+    height: 30px;
     color: white;
     font-size: 24px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    border-radius: 25px;
   }
 
   .st-title {
@@ -408,7 +396,7 @@ header {
 }
 
 .st-flex {
-  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -418,8 +406,9 @@ header {
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 64px auto 0;
+  padding: 0 50px;
 
   &:nth-child(2) {
     flex-direction: row-reverse;
@@ -441,6 +430,7 @@ header {
         text-align: left;
         letter-spacing: 1px;
         width: 364px;
+        margin-top: 18px;
       }
 
     }
@@ -673,10 +663,10 @@ header {
 
   .triangles {
     display: flex;
-    width: min(100%,120px);
+    width: min(100%, 120px);
     margin: 0 32px;
     align-items: center;
-    gap: 10px ;
+    gap: 10px;
   }
 
   .triangle {
@@ -806,6 +796,10 @@ footer {
 
 @media screen and (max-width: 767px) {
 
+  /* .pc-wrapper {
+    max-width: 440px;
+  } */
+
   /* header */
   header {
     .pc-header {
@@ -934,7 +928,7 @@ footer {
   }
 
   .solution {
-    margin: 0 auto;
+    margin: 0 auto 50px;
     max-width: 440px;
 
     .solution-img {
@@ -952,42 +946,41 @@ footer {
 
   .solution-flex {
     display: block;
+    
 
     .item {
       width: 100%;
       margin: 64px auto 0;
       display: flex;
+      gap: 10px;
       align-items: center;
 
       &:nth-of-type(2) {
         flex-direction: row-reverse;
-
-        .text-img {
-          margin-left: 24px;
-        }
       }
 
       .text-img {
-        width: 90%;
-        height: 50%;
-        position: relative;
+        width: 70%;
       }
 
 
       p {
+        width: 95%;
+        padding: 24px 0;
         font-weight: normal;
-        font-size: 14px;
+        font-size: 0.8rem;
+        margin: 0;
       }
 
       .item-triangle {
         width: 0px;
         height: 0px;
-        border-top: 20px solid transparent;
-        border-bottom: 20px solid transparent;
-        border-left: 30px solid #ECECEC;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid #ECECEC;
         position: absolute;
-        top: 55%;
-        right: -25%;
+        top: 50%;
+        left: 98%;
         transform: translate(-50%, -50%);
       }
 
@@ -1007,16 +1000,20 @@ footer {
     }
   }
 
+  .item:nth-child(2) p{
+    margin-left: auto;
+  }
+
   .item:nth-child(2) .item-triangle {
     width: 0px;
     height: 0px;
     border-left: none;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-right: 30px solid #ECECEC;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #ECECEC;
     position: absolute;
-    top: 55%;
-    left: -15%;
+    top: 50%;
+    left: 3%;
     transform: translate(-50%, -50%);
   }
 
@@ -1096,6 +1093,7 @@ footer {
 
   .st-flex-item {
     margin: 64px auto 0;
+    padding: 0;
 
     .flex-img-1 {
       max-width: 230px;
@@ -1226,7 +1224,7 @@ footer {
       font-size: 18px;
     }
 
-    .rectangle-flex{
+    .rectangle-flex {
       margin-top: 32px;
     }
 
