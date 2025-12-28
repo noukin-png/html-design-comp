@@ -296,9 +296,11 @@ header {
 
   .bg-text {
     display: flex;
+    gap: 32px;
     width: 95%;
     align-items: center;
-    padding: 0 60px;
+    margin: 0 auto;
+    padding: 0 30px;
 
 
     p {
@@ -429,7 +431,7 @@ header {
         font-size: 18px;
         text-align: left;
         letter-spacing: 1px;
-        width: 364px;
+        max-width: 365px;
         margin-top: 18px;
       }
 
@@ -459,6 +461,7 @@ header {
 /* section3 */
 .section3 {
   margin: 0 auto;
+  padding: 0 50px;
 
   span {
     color: #FF834E;
@@ -508,27 +511,27 @@ header {
   }
 
   .why-img-1 {
-    width: 220px;
+    max-width: 220px;
     height: 180px;
     margin: 10px auto 0;
   }
 
   .why-img-2 {
-    width: 280px;
+    max-width: 280px;
     height: 150px;
-    margin: 10px auto 0;
+    margin: 40px auto 0;
 
   }
 
   .why-img-3 {
-    width: 280px;
+    max-width: 280px;
     height: 145px;
-    margin: 10px auto 0;
+    margin: 40px auto 0;
 
   }
 
   .why-img-4 {
-    width: 200px;
+    max-width: 200px;
     height: 180px;
     margin: 10px auto 0;
 
@@ -576,7 +579,7 @@ header {
 }
 
 .comparison-text {
-  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 
@@ -653,11 +656,10 @@ header {
 
 .section5 {
   margin: 0 auto;
-  max-width: 1000px;
   text-align: center;
 
   h1 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
   }
 
@@ -678,25 +680,18 @@ header {
   }
 
   .rectangle-bg {
-    background: #E1E1E1;
-    border-radius: 10px;
-    width: 100%;
-    height: 400px;
-    position: relative;
-    margin: 64px auto 0;
+    width: 80%;
+    margin: 80px auto 0;
+    background-color: #E1E1E1;
+    border-radius: 15px;
+    padding: 30px 25px;
+
   }
 
   .rectangle {
-    width: 95%;
-    height: 90%;
-    margin: 0 auto;
     background: white;
-    border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 16px;
+    border-radius: 15px;
+    padding: 50px 32px 16px;
   }
 
   .font-bold {
@@ -704,18 +699,20 @@ header {
   }
 
   .rectangle-text {
-    display: inline;
+    display: block;
+    background: linear-gradient(transparent 70%, #FFE880 70%);
+    max-width: 500px;
+    margin: 0 auto;
+  }
 
-    .marker {
-      background: linear-gradient(transparent 60%, #FFE880 60%);
-
-    }
+  .rectangle-text br:nth-child(1) {
+    display: none;
   }
 
   .icon {
+    font-weight: bold;
     position: absolute;
     width: 80px;
-    height: 30px;
     top: -20px;
     left: 10px;
     background: #BEBEBE;
@@ -725,19 +722,18 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    letter-spacing: 1px;
   }
 
   .before {
     background: #EFEFEF;
     position: relative;
     width: 100%;
-    height: auto;
     border-radius: 10px;
     text-align: left;
 
     .before-text {
-      margin-top: 20px;
-      padding: 0 12px;
+      padding: 15px 15px 8px;
     }
 
   }
@@ -746,13 +742,11 @@ header {
     background: #FFEDD8;
     position: relative;
     width: 100%;
-    height: auto;
     border-radius: 10px;
     text-align: left;
 
     .after-text {
-      margin-top: 20px;
-      padding: 0 12px;
+      padding: 15px 15px 8px;
     }
 
     .icon {
@@ -763,7 +757,7 @@ header {
   .rectangle-flex {
     display: flex;
     align-items: center;
-    margin: 5% auto;
+    margin: 5% auto 2%;
   }
 }
 
@@ -817,12 +811,12 @@ footer {
 
     .text-1,
     .text-2 {
-      font-size: 14px;
+      font-size: 0.7rem;
       letter-spacing: 2px;
     }
 
     .text-1 {
-      max-width: 330px;
+      max-width: 90%;
       height: 40px;
       margin: 0 auto;
       line-height: 40px;
@@ -830,9 +824,9 @@ footer {
     }
 
     .text-2 {
-      max-width: 350px;
+      max-width: 95%;
       height: 50px;
-      padding: 4px;
+      padding: 8px 4px;
       margin: 32px auto 0;
       text-align: left;
     }
@@ -940,13 +934,12 @@ footer {
   }
 
   .section2-width {
-    max-width: 360px;
     margin: 0 auto;
   }
 
   .solution-flex {
     display: block;
-    
+
 
     .item {
       width: 100%;
@@ -1000,7 +993,7 @@ footer {
     }
   }
 
-  .item:nth-child(2) p{
+  .item:nth-child(2) p {
     margin-left: auto;
   }
 
@@ -1019,16 +1012,14 @@ footer {
 
 
 
-
-
   .bg {
     max-width: 100%;
     margin: 0 auto;
 
     .bg-text {
       margin: 0;
-      padding: 0 12px;
       width: 100%;
+      padding: 0;
       height: 100%;
 
       .bg-item-1 {
@@ -1044,21 +1035,20 @@ footer {
       p {
         line-height: 2;
         letter-spacing: 1px;
+      }
 
-        &:nth-child(1),
-        &:nth-child(2) {
-          font-size: 18px;
-        }
+      p:nth-of-type(1){
+        font-size: 18px;
+        padding: 0 24px;
+      }
 
-        &:nth-child(1),
-        &:nth-child(3) {
-          font-size: 14px;
-          padding: 0 8px;
-        }
+      p:nth-of-type(2){
+        font-size: 14px;
+        padding: 0 24px;
+      }
 
-        span:nth-child(2) {
-          font-size: 18px;
-        }
+      .img-flex p{
+        padding: 0;
       }
 
     }
@@ -1066,7 +1056,6 @@ footer {
     .bg-item-2 {
       display: none;
     }
-
 
   }
 
@@ -1078,6 +1067,8 @@ footer {
 
   .st-flex-item {
     display: block;
+    margin: 0;
+    padding: 0;
   }
 
   .strengths {
@@ -1092,8 +1083,7 @@ footer {
   }
 
   .st-flex-item {
-    margin: 64px auto 0;
-    padding: 0;
+    margin: 64px 0;
 
     .flex-img-1 {
       max-width: 230px;
@@ -1115,7 +1105,7 @@ footer {
 
     .st-text {
       text-align: left;
-      max-width: 364px;
+      padding: 32px 32px 0;
 
       p {
         &:nth-child(1) {
@@ -1133,7 +1123,7 @@ footer {
 
   .why {
     text-align: left;
-    padding: 0 32px;
+    padding: 0;
     margin: 0 auto;
 
     p {
@@ -1148,7 +1138,7 @@ footer {
 
   .why-flex {
     display: block;
-    padding: 0 20px;
+    padding: 0;
 
     .why-flex-item {
       width: 100%;
@@ -1194,38 +1184,45 @@ footer {
     min-width: 1140px;
   }
 
+  .section5-bg{
+    padding: 100px 10px;
+  }
+
   .section5 {
     /* max-width: 440px; */
+    padding: 0;
 
     h1 {
       font-size: 18px;
       text-align: center;
     }
 
-
-    .rectangle-bg {
-      min-height: 750px;
-      height: auto;
-      max-width: 400px;
-      margin: 32px 0;
+    .rectangle-bg{
+      width: 100%;
+      margin: 50px auto 0;
     }
-
-    .rectangle {
-      height: 92%;
-      max-width: 350px;
-      margin: 0 auto;
-      padding: 32px 10px;
-
-    }
-
 
 
     .rectangle-text {
       font-size: 18px;
     }
 
+    .rectangle-text:nth-child(1) br:nth-child(1) {
+      display: block;
+    }
+
     .rectangle-flex {
-      margin-top: 32px;
+      margin-top: 50px;
+    }
+
+    .rectangle-text{
+      margin: 0 16px;
+      padding: 0 px;
+      background: linear-gradient(transparent 85%, #FFE880 85%);
+    }
+    
+    .rectangle{
+      padding: 50px 18px 16px;
     }
 
 
@@ -1254,7 +1251,6 @@ footer {
 
 
     .before {
-      width: min(100%, 340px);
 
       .before-text {
         font-size: 16px;
@@ -1262,11 +1258,9 @@ footer {
     }
 
     .after {
-      width: min(100%, 340px);
 
       .after-text {
         font-size: 16px;
-        padding: 0 18px 0;
         text-align: left;
       }
     }
