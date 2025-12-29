@@ -166,6 +166,8 @@ header {
 .background-triangle {
   position: relative;
   max-width: 1440px;
+  
+  
 
   &::after {
     content: "";
@@ -461,7 +463,7 @@ header {
 /* section3 */
 .section3 {
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 32px;
 
   span {
     color: #FF834E;
@@ -811,22 +813,22 @@ footer {
 
     .text-1,
     .text-2 {
-      font-size: 0.7rem;
+      font-size: 14px;
       letter-spacing: 2px;
+      box-sizing: content-box;
     }
 
     .text-1 {
-      max-width: 90%;
-      height: 40px;
+      max-width: 330px;
+      height: auto;
       margin: 0 auto;
-      line-height: 40px;
-      padding: 0;
+      padding:12px;
     }
 
     .text-2 {
-      max-width: 95%;
-      height: 50px;
-      padding: 8px 4px;
+      max-width: 350px;
+      height: auto;
+      padding: 12px 12px;
       margin: 32px auto 0;
       text-align: left;
     }
@@ -887,7 +889,7 @@ footer {
           }
 
           &:nth-child(2) {
-            max-width: 300px;
+            max-width: 320px;
             height: 90px;
             margin-left: auto;
             margin-top: 32px;
