@@ -913,6 +913,7 @@ footer {
         width: 100%;
 
         p{
+          font-size: 14px;
 
           .worries-triangle{
             left: 10%;
