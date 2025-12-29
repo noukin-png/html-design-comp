@@ -31,11 +31,24 @@ header {
 /* section1 */
 .section1 {
   margin: 0 auto 220px;
+  padding-top: 100px;
   background: rgb(253, 241, 217);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background: rgb(253, 241, 217);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+
 
   .background {
     padding-top: 50px;
     margin: 0 auto;
+    padding: 0 12px;
   }
 
   .text-1,
@@ -87,13 +100,17 @@ header {
     max-width: 64px;
     height: 80px;
     margin: 50px auto 0;
+
+    .arrow-sp {
+      display: none;
+    }
   }
 
   .text-4 {
     font-size: 1.8rem;
+    margin-top: 80px;
     font-weight: bold;
     text-align: center;
-    position: relative;
 
     .text-4-1 {
       border-bottom: 2px solid rgb(76, 144, 247);
@@ -126,25 +143,45 @@ header {
     .worries-text {
       width: 65%;
 
-      img {
-        display: block;
+      p {
+        background: white;
+        height: auto;
+        border-radius: 5px;
+        position: relative;
 
-        &:nth-child(1) {
-          max-width: 450px;
-          height: 110px;
+        .worries-triangle {
+          position: absolute;
+          width: 0px;
+          height: 0px;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 10px solid white;
+          top: 100%;
+          right: 10%;
         }
 
-        &:nth-child(2) {
+        &:nth-of-type(1) {
+          max-width: 450px;
+          padding: 24px 32px;
+          display: flex;
+          justify-content: center;
+        }
+
+        &:nth-of-type(2) {
           max-width: 345px;
-          height: 99px;
           margin-left: auto;
           margin-top: 32px;
+          padding: 24px 32px;
+          display: flex;
+          justify-content: center;
         }
 
-        &:nth-child(3) {
+        &:nth-of-type(3) {
           max-width: 450px;
-          height: 110px;
-          margin-top: 32px;
+          margin: 32px 0;
+          padding: 18px 32px;
+          display: flex;
+          justify-content: center;
         }
       }
 
@@ -161,23 +198,6 @@ header {
       }
     }
   }
-}
-
-.background-triangle {
-  position: relative;
-  max-width: 1440px;
-  
-  
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 200px;
-    background: rgb(253, 241, 217);
-    clip-path: polygon(50% 100%, 0 0, 100% 0);
-  }
-
 }
 
 .solution {
@@ -250,7 +270,6 @@ header {
       font-size: 1.2rem;
       margin-bottom: 30px;
       padding: 24px 8px;
-      overflow: auto;
     }
 
     .item-triangle {
@@ -810,6 +829,11 @@ footer {
   .section1 {
 
     margin-bottom: 150px;
+    padding-top: 50px;
+
+    &::after {
+      height: 100px;
+    }
 
     .text-1,
     .text-2 {
@@ -822,7 +846,7 @@ footer {
       max-width: 330px;
       height: auto;
       margin: 0 auto;
-      padding:12px;
+      padding: 12px;
     }
 
     .text-2 {
@@ -836,7 +860,7 @@ footer {
     .text-3 {
       font-size: 18px;
       letter-spacing: 5px;
-      padding: 0 12px;
+      padding: 0;
     }
 
     .img {
@@ -847,6 +871,14 @@ footer {
     .arrow {
       max-width: 30px;
       height: 40px;
+
+      .arrow-pc {
+        display: none;
+      }
+
+      .arrow-sp {
+        display: block;
+      }
     }
 
     .text-4 {
@@ -875,30 +907,33 @@ footer {
     .worries {
       max-width: 900px;
       display: block;
-      padding: 0 24px;
+      padding: 0;
 
       .worries-text {
         width: 100%;
 
-        img {
-          display: block;
+        p{
 
-          &:nth-child(1) {
-            max-width: 320px;
-            height: 80px;
+          .worries-triangle{
+            left: 10%;
           }
 
-          &:nth-child(2) {
-            max-width: 320px;
-            height: 90px;
+          &:nth-of-type(1) {
+            width:80%;
+            padding: 24px;
+          }
+
+          &:nth-of-type(2) {
+            width: 80%;
             margin-left: auto;
             margin-top: 32px;
+            padding: 24px;
           }
 
-          &:nth-child(3) {
-            max-width: 350px;
-            height: 90px;
+          &:nth-of-type(3) {
+            width: 90%;
             margin-top: 32px;
+            padding:24px;
           }
         }
       }
@@ -914,12 +949,7 @@ footer {
 
     }
 
-    .background-triangle {
-      &::after {
-        height: 100px;
-      }
 
-    }
 
   }
 
@@ -1039,17 +1069,17 @@ footer {
         letter-spacing: 1px;
       }
 
-      p:nth-of-type(1){
+      p:nth-of-type(1) {
         font-size: 18px;
         padding: 0 24px;
       }
 
-      p:nth-of-type(2){
+      p:nth-of-type(2) {
         font-size: 14px;
         padding: 0 24px;
       }
 
-      .img-flex p{
+      .img-flex p {
         padding: 0;
       }
 
@@ -1186,7 +1216,7 @@ footer {
     min-width: 1140px;
   }
 
-  .section5-bg{
+  .section5-bg {
     padding: 100px 10px;
   }
 
@@ -1199,7 +1229,7 @@ footer {
       text-align: center;
     }
 
-    .rectangle-bg{
+    .rectangle-bg {
       width: 100%;
       margin: 50px auto 0;
     }
@@ -1217,13 +1247,13 @@ footer {
       margin-top: 50px;
     }
 
-    .rectangle-text{
+    .rectangle-text {
       margin: 0 16px;
       padding: 0 px;
       background: linear-gradient(transparent 85%, #FFE880 85%);
     }
-    
-    .rectangle{
+
+    .rectangle {
       padding: 50px 18px 16px;
     }
 
