@@ -405,6 +405,9 @@ header {
     font-size: 24px;
     margin: 0 auto;
     border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .st-title {
@@ -922,7 +925,7 @@ footer {
           &:nth-of-type(1) {
             width:75%;
             max-width: 320px;
-            padding: 24px 12px;
+            padding: 24px 0;
             justify-content: center;
           }
 
