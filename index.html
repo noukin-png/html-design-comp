@@ -3,15 +3,41 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="未経験でも4ヶ月で理想の自分へ。実践的Web制作スクールで“自由な働き方”を手に入れよう。今月ご契約でAmazonギフト券5万円分プレゼント。LINEで無料相談受付中。">
+  <!-- OGP設定 -->
+  <meta property="og:title" content="TORA PROJECT | 自分らしく働くための学びサイト">
+  <meta property="og:description" content="Web制作・副業スキルを学べる20代向けオンラインスクール。『自分らしく働く』未来を応援します。">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/ogp.png">
+  <meta property="og:url" content="https://toraproject.jp/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TORA PROJECT">
+  <!-- Twitterカード -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TORA PROJECT | 自分らしく働くための学びサイト">
+  <meta name="twitter:description" content="Web制作・副業スキルを学べるオンラインスクール。『自分らしく働く』未来を応援します。">
+  <meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/ogp.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png">
+  <!-- Webフォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <?php wp_head(); ?>
+  <?php if (is_page('thanks')): ?>
+  <meta name="robots" content="noindex,nofollow">
+  <?php endif; ?>
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <img src="img/pc_header.png" alt="" class="pc-header">
-    <img src="img/header.png" alt="" class="sp-header">
+  <header class="pc-wrapper">
+    <a href="index.html"><img src="img/pc_header.png" alt="" class="pc-header"></a>
+    <a href=""><img src="img/header.png" alt="" class="sp-header"></a>
   </header>
 
   <main>
@@ -413,8 +439,8 @@
 
 
     <section class="section6">
-      <img src="img/PC2.png" alt="" class="pc-2">
-      <img src="img/SP2.png" alt="" class="sp-2">
+      <a href=""><img src="img/PC2.png" alt="" class="pc-2"></a>
+      <a href=""><img src="img/SP2.png" alt="" class="sp-2"></a>
     </section>
 
   </main>
@@ -427,5 +453,6 @@
   </footer>
 
 </body>
+<!--  -->
 
 </html>
