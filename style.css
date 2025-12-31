@@ -301,7 +301,7 @@ header {
 
         &:nth-of-type(1) {
           max-width: 450px;
-          padding: 24px 32px;
+          padding: 24px;
           display: flex;
           justify-content: center;
         }
@@ -1061,9 +1061,9 @@ footer {
 
 @media screen and (max-width: 767px) {
 
-  /* .pc-wrapper {
+  .pc-wrapper {
     max-width: 440px;
-  } */
+  }
 
   /* header */
   header {
@@ -1288,7 +1288,7 @@ footer {
     }
 
     .worries {
-      max-width: 900px;
+      max-width: 440px;
       display: block;
       padding: 0;
 
@@ -1305,7 +1305,7 @@ footer {
           &:nth-of-type(1) {
             width: 75%;
             max-width: 320px;
-            padding: 24px 12px;
+            padding: 24px 4px;
             justify-content: center;
           }
 
