@@ -44,124 +44,123 @@ header {
     margin: 0 auto;
     display: none;
 
-  }
-
-  .header-flex {
-    position: relative;
-    display: inline-block;
-  }
-
-  .triangle-1 {
-    max-width: 38.4%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    right: 0%;
-  }
-
-  .triangle-1-shadow {
-    max-width: 41.8%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    right: 0%;
-  }
-
-  .triangle-2 {
-    max-width: 19.3%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    right: 0%;
-  }
-
-  .triangle-2-shadow {
-    max-width: 23.9%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    right: 0%;
-  }
-
-
-
-  .header-flex::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 30%;
-    background: linear-gradient(to bottom, rgba(255, 254, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%);
-  }
-
-  .header-text-1 {
-    position: absolute;
-    top: 5%;
-    left: 0;
-    width: 100%;
-    padding: 8px 0;
-
-    img {
-      max-width: 57.3%;
-      margin-left: 50px;
+    .header-flex {
+      position: relative;
+      display: inline-block;
     }
-  }
 
-  .header-text-2 {
-    position: absolute;
-    top: 65%;
-    width: 100%;
-
-    img {
-      max-width: 91%;
-      display: block;
-      margin: 0 auto;
-    }
-  }
-
-  .header-text-3 {
-    position: absolute;
-    top: 73%;
-    width: 100%;
-
-    img {
-      width: 94.1%;
-      display: block;
-      margin: 0 auto;
-    }
-  }
-
-  .header-text-4 {
-    width: 100%;
-    position: absolute;
-    top: 82%;
-
-
-    a {
-      display: block;
-      margin: 0 auto;
-      color: white;
-      background: #FFAD4E;
-      font-size: clamp(8px, 5vw, 24px);
-      width: 95.6%;
+    .triangle-1 {
+      max-width: 38.4%;
       height: auto;
-      text-align: center;
-      font-weight: bold;
-      letter-spacing: 1px;
-      padding: 14px 18px;
-      border-radius: 35px;
-      box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      right: 0%;
     }
-  }
 
-  .header-text-5 {
-    width: 100%;
-    position: absolute;
-    bottom: 0%;
-    height: auto;
-    font-size: clamp(4px, 3vw, 14px);
+    .triangle-1-shadow {
+      max-width: 41.8%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      right: 0%;
+    }
+
+    .triangle-2 {
+      max-width: 19.3%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      right: 0%;
+    }
+
+    .triangle-2-shadow {
+      max-width: 23.9%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      right: 0%;
+    }
+
+
+
+    .header-flex::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 30%;
+      background: linear-gradient(to bottom, rgba(255, 254, 255, 0) 0%,
+          rgba(255, 255, 255, 1) 100%);
+    }
+
+    .header-text-1 {
+      position: absolute;
+      top: 5%;
+      left: 0;
+      width: 100%;
+      padding: 8px 0;
+
+      img {
+        max-width: 57.3%;
+        margin-left: 50px;
+      }
+    }
+
+    .header-text-2 {
+      position: absolute;
+      top: 65%;
+      width: 100%;
+
+      img {
+        max-width: 91%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .header-text-3 {
+      position: absolute;
+      top: 73%;
+      width: 100%;
+
+      img {
+        width: 94.1%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .header-text-4 {
+      width: 100%;
+      position: absolute;
+      top: 82%;
+
+
+      a {
+        display: block;
+        margin: 0 auto;
+        color: white;
+        background: #FFAD4E;
+        font-size: clamp(8px, 5vw, 24px);
+        width: 95.6%;
+        height: auto;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 14px 18px;
+        border-radius: 35px;
+        box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    .header-text-5 {
+      width: 100%;
+      position: absolute;
+      bottom: 0%;
+      height: auto;
+      font-size: clamp(4px, 3vw, 14px);
+    }
   }
 
 
