@@ -17,6 +17,15 @@
   transform: translateY(0);
 }
 
+.line-scroll{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.line-scroll.fade{
+  opacity: 1;
+}
+
 a {
   text-decoration: none;
 }
