@@ -1705,7 +1705,7 @@ footer {
   }
 
   .section6 {
-    margin: 0 0 32px;
+    margin: 0 0;
     height: auto;
 
     .pc-2 {
@@ -1785,11 +1785,13 @@ footer {
         width: 100%;
         position: absolute;
         bottom: 0;
-        
-        p {
-          font-size: clamp(4px, 3vw, 14px);
-          letter-spacing: 2px;
+        height: auto;
+        font-size: clamp(1px, 3vw, 14px);
+        letter-spacing: 1px;
 
+        p{
+          width: 94.3%;
+          margin: 0 auto;
         }
       }
     }
@@ -1798,6 +1800,7 @@ footer {
   footer {
 
     .footer-text {
+      width: 100%;
       text-align: center;
       font-size: clamp(8px, 2vw, 12px);
     }
