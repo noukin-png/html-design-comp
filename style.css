@@ -1788,6 +1788,7 @@ footer {
         height: auto;
         letter-spacing: 1px;
         font-size: clamp(1px, 3vw, 14px);
+        font-size: 4px;
 
         p {
           width: 94.3%;
@@ -1805,13 +1806,5 @@ footer {
       font-size: clamp(8px, 2vw, 12px);
 
     }
-  }
-}
-
-@media screen and (max-width: 767px) and (orientation: landscape) {
-  header .sp-header .header-text-5 p {
-    font-size: 10px;
-    line-height: 1.4;
-    letter-spacing: 1px;
   }
 }
