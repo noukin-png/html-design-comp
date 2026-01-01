@@ -1784,12 +1784,13 @@ footer {
       .header-text-5 {
         width: 100%;
         position: absolute;
-        bottom: 0%;
-
+        bottom: 0;
+        
         p {
           font-size: clamp(4px, 3vw, 14px);
-        }
+          letter-spacing: 2px;
 
+        }
       }
     }
   }
@@ -1800,19 +1801,5 @@ footer {
       text-align: center;
       font-size: clamp(8px, 2vw, 12px);
     }
-  }
-}
-
-@media screen and (max-width: 767px) and (orientation: landscape) {
-  header .sp-header .header-text-5 p {
-    font-size: 10px;
-    line-height: 1.2;
-    letter-spacing: 1px;
-  }
-
-  .section6 .sp-2 .header-text-5 p{
-    font-size: 10px;
-    line-height: 1.2;
-    letter-spacing: 1px;
   }
 }
