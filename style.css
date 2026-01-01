@@ -1786,7 +1786,7 @@ footer {
         position: absolute;
         bottom: 0;
         height: auto;
-        font-size: clamp(1px, 3vw, 14px);
+        font-size: clamp(10px, 3vw, 14px);
         letter-spacing: 1px;
 
         p{
@@ -1805,4 +1805,5 @@ footer {
       font-size: clamp(8px, 2vw, 12px);
     }
   }
+
 }
