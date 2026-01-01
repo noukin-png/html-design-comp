@@ -1805,7 +1805,13 @@ footer {
 
 @media screen and (max-width: 767px) and (orientation: landscape) {
   header .sp-header .header-text-5 p {
-    font-size: 8px;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  }
+
+  .section6 .sp-2 .header-text-5 p{
+    font-size: 10px;
     line-height: 1.2;
     letter-spacing: 1px;
   }
