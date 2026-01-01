@@ -17,12 +17,12 @@
   transform: translateY(0);
 }
 
-.line-scroll{
+.line-scroll {
   opacity: 0;
   transition: all 0.5s ease;
 }
 
-.line-scroll.fade{
+.line-scroll.fade {
   opacity: 1;
 }
 
@@ -1204,9 +1204,12 @@ footer {
         width: 100%;
         position: absolute;
         bottom: 2%;
-        height: auto;
-        font-size: clamp(4px, 3vw, 14px);
-        letter-spacing: 2px;
+
+        p {
+          font-size: clamp(4px, 3vw, 14px);
+          letter-spacing: 2px;
+
+        }
       }
     }
 
@@ -1782,9 +1785,20 @@ footer {
         width: 100%;
         position: absolute;
         bottom: 0%;
-        height: auto;
-        font-size: clamp(4px, 3vw, 14px);
+
+        p {
+          font-size: clamp(4px, 3vw, 14px);
+        }
+
       }
+    }
+  }
+
+  footer {
+
+    .footer-text {
+      text-align: center;
+      font-size: clamp(8px, 2vw, 12px);
     }
   }
 
