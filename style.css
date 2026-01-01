@@ -937,7 +937,6 @@ header {
 .section6 {
   max-width: 1200px;
   height: 630px;
-  margin: 100px auto;
 
   .pc-2 {
 
@@ -1784,11 +1783,10 @@ footer {
       .header-text-5 {
         width: 100%;
         position: absolute;
-        bottom: 0;
-        height: auto;
+        bottom: 0.5%;
+        max-height: 53px;
         letter-spacing: 1px;
         font-size: clamp(1px, 3vw, 14px);
-        font-size: 4px;
 
         p {
           width: 94.3%;
@@ -1804,7 +1802,6 @@ footer {
       width: 100%;
       text-align: center;
       font-size: clamp(8px, 2vw, 12px);
-
     }
   }
 }
