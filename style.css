@@ -1205,7 +1205,7 @@ footer {
         top: 92%;
 
         p {
-          font-size: clamp(4px, 3vw, 14px);
+          font-size: clamp(4px, 2.5vw, 14px);
           letter-spacing: 2px;
 
         }
@@ -1785,7 +1785,7 @@ footer {
         position: absolute;
         top: 90%;
         letter-spacing: 1px;
-        font-size: clamp(4px, 3vw, 14px);
+        font-size: clamp(4px, 2.5vw, 14px);
 
         p {
           width: 94.3%;
