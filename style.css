@@ -1645,9 +1645,12 @@ footer {
     }
 
     .rectangle-text {
-      margin: 0 16px;
-      padding: 0 px;
+      margin: 0 auto;
+      padding: 0;
+      max-width: 300px;
       background: linear-gradient(transparent 85%, #FFE880 85%);
+      font-size: clamp(12px, 4vw, 18px);
+
     }
 
     .rectangle {
