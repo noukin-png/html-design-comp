@@ -1083,7 +1083,6 @@ footer {
     .sp-header {
       max-width: 440px;
       position: relative;
-      width: 100%;
       aspect-ratio: 440 / 857;
       margin: 0 auto;
       display: block;
@@ -1205,7 +1204,7 @@ footer {
         top: 92%;
 
         p {
-          font-size: clamp(4px, 2.5vw, 14px);
+          font-size: clamp(4px, 3vw, 14px);
           letter-spacing: 2px;
 
         }
@@ -1704,7 +1703,7 @@ footer {
   }
 
   .section6 {
-    margin: 0 0;
+    margin: 0;
     height: auto;
 
     .pc-2 {
@@ -1715,7 +1714,6 @@ footer {
     .sp-2 {
       max-width: 440px;
       position: relative;
-      width: 100%;
       aspect-ratio: 440 / 636;
       margin: 0 auto;
       display: block;
@@ -1785,7 +1783,7 @@ footer {
         position: absolute;
         top: 90%;
         letter-spacing: 1px;
-        font-size: clamp(4px, 2.5vw, 14px);
+        font-size: clamp(4px, 3vw, 14px);
 
         p {
           width: 94.3%;
