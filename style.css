@@ -61,7 +61,7 @@ header {
     }
 
     .triangle-1 {
-      max-width: 29.64%;
+      width: 29.64%;
       height: auto;
       position: absolute;
       top: 0;
@@ -69,7 +69,7 @@ header {
     }
 
     .triangle-1-shadow {
-      max-width: 31.88%;
+      width: 31.88%;
       height: auto;
       position: absolute;
       top: 0;
@@ -77,7 +77,7 @@ header {
     }
 
     .triangle-2 {
-      max-width: 19.02%;
+      width: 19.02%;
       height: auto;
       position: absolute;
       top: 0;
@@ -85,7 +85,7 @@ header {
     }
 
     .triangle-2-shadow {
-      max-width: 21.19%;
+      width: 21.19%;
       height: auto;
       position: absolute;
       top: 0;
@@ -95,14 +95,14 @@ header {
 
     .header {
       max-width: 1440px;
-      height: auto;
+      /* height: auto; */
       position: relative;
       width: 100%;
       margin: 0 auto;
     }
 
     .shadow {
-      max-width: 17.57%;
+      width: 17.57%;
     }
 
     .header-flex {
@@ -118,15 +118,15 @@ header {
       padding: 8px 0;
 
       img {
-        max-width: 64.5%;
-        margin-left: 100px;
+        width: 64.5%;
+        margin-left: 10%;
       }
     }
 
     .header-text-2 {
       position: absolute;
       top: 35%;
-      left: 70px;
+      left: 5%;
       width: 90%;
 
       img {
@@ -135,38 +135,34 @@ header {
     }
 
     .header-text-3 {
+      position: absolute;
+      width: 43%;
+      top: 62%;
+      left: 5%;
+      overflow: hidden;
+      padding: 24px 32px;
+      border-radius: 35px;
+      box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
+      background: #FFAD4E;
+      text-align: center;
+      color: white;
+      font-size: clamp(8px, 2.3vw, 35px);
+      font-weight: bold;
+      letter-spacing: 1px;
 
-      a {
-        position: relative;
+
+      &::after {
+        content: "";
         position: absolute;
-        top: 62%;
-        left: 70px;
-        color: white;
-        background: #FFAD4E;
-        font-size: clamp(8px, 2.3vw, 35px);
-        width: 43%;
-        text-align: center;
-        font-weight: bold;
-        letter-spacing: 1px;
-        padding: 24px 32px;
-        border-radius: 35px;
-        box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
-        overflow: hidden;
-
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(120deg,
-              transparent,
-              rgba(255, 255, 255, 0.6),
-              transparent);
-          transform: translateX(-100%);
-          animation: shine 2.5s infinite;
-        }
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.6),
+            transparent);
+        animation: shine 2.5s infinite;
       }
     }
 
@@ -175,7 +171,7 @@ header {
       bottom: 10%;
       width: 90%;
       height: auto;
-      left: 70px;
+      left: 5%;
       letter-spacing: 2px;
       font-size: clamp(8px, 1.5vw, 20px);
     }
@@ -959,7 +955,7 @@ header {
 /* section6 */
 .section6 {
   max-width: 1200px;
-  height: 630px;
+  /* height: 630px; */
 
   .pc-2 {
 
@@ -968,7 +964,7 @@ header {
     }
 
     .triangle-1 {
-      max-width: 29.64%;
+      width: 29.64%;
       height: auto;
       position: absolute;
       top: 0;
@@ -976,7 +972,7 @@ header {
     }
 
     .triangle-1-shadow {
-      max-width: 31.88%;
+      width: 31.88%;
       height: auto;
       position: absolute;
       top: 0;
@@ -984,7 +980,7 @@ header {
     }
 
     .triangle-2 {
-      max-width: 19.02%;
+      width: 19.02%;
       height: auto;
       position: absolute;
       top: 0;
@@ -992,7 +988,7 @@ header {
     }
 
     .triangle-2-shadow {
-      max-width: 21.19%;
+      width: 21.19%;
       height: auto;
       position: absolute;
       top: 0;
@@ -1009,7 +1005,7 @@ header {
     }
 
     .shadow {
-      max-width: 17.57%;
+      width: 17.57%;
     }
 
     .header-flex {
@@ -1019,19 +1015,18 @@ header {
     .header-text-1 {
       position: absolute;
       top: 8%;
-      left: 60px;
+      left: 5%;
       width: 100%;
-      padding: 8px 0;
 
       img {
-        max-width: 56%;
+        width: 57%;
       }
     }
 
     .header-text-2 {
       position: absolute;
       top: 35%;
-      left: 100px;
+      left: 5%;
       width: 90%;
 
       img {
@@ -1041,36 +1036,36 @@ header {
 
     .header-text-3 {
 
-      a {
-        position: absolute;
-        top: 60%;
-        left: 90px;
-        color: white;
-        background: #FFAD4E;
-        font-size: clamp(12px, 2.2vw, 38px);
-        max-width: 50%;
-        font-weight: bold;
-        letter-spacing: 2px;
-        padding: 12px 68px;
-        border-radius: 50px;
-        box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
-        overflow: hidden;
+      position: absolute;
+      color: white;
+      top: 60%;
+      left: 5%;
+      color: white;
+      background: #FFAD4E;
+      font-size: clamp(12px, 2.2vw, 38px);
+      width: 41%;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding: 12px 50px;
+      border-radius: 50px;
+      box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
 
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(120deg,
-              transparent,
-              rgba(255, 255, 255, 0.6),
-              transparent);
-          transform: translateX(-100%);
-          animation: shine 2.5s infinite;
-        }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.6),
+            transparent);
+        animation: shine 2.5s infinite;
       }
+
     }
 
     .header-text-4 {
@@ -1078,7 +1073,7 @@ header {
       bottom: 10%;
       width: 90%;
       height: auto;
-      left: 70px;
+      left: 5%;
       letter-spacing: 2px;
       font-size: clamp(8px, 1.5vw, 20px);
     }
@@ -1125,6 +1120,7 @@ footer {
       aspect-ratio: 440 / 857;
       margin: 0 auto;
       display: block;
+      height: auto;
 
 
       .header-flex {
@@ -1164,8 +1160,6 @@ footer {
         right: 0%;
       }
 
-
-
       .header-flex::after {
         content: "";
         position: absolute;
@@ -1196,7 +1190,7 @@ footer {
         width: 100%;
 
         img {
-          max-width: 91%;
+          width: 91%;
           display: block;
           margin: 0 auto;
         }
@@ -1215,41 +1209,37 @@ footer {
       }
 
       .header-text-4 {
-        width: 100%;
         position: absolute;
         top: 82%;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        color: white;
+        width: 95.6%;
+        margin: 0 auto;
+        display: block;
+        background: #FFAD4E;
+        font-size: clamp(8px, 5vw, 24px);
+        height: auto;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 14px 18px;
+        border-radius: 35px;
+        box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
 
-
-        a {
-          display: block;
-          margin: 0 auto;
-          color: white;
-          background: #FFAD4E;
-          font-size: clamp(8px, 5vw, 24px);
-          width: 95.6%;
-          height: auto;
-          text-align: center;
-          font-weight: bold;
-          letter-spacing: 1px;
-          padding: 14px 18px;
-          border-radius: 35px;
-          box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
-          overflow: hidden;
-
-          &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(120deg,
-                transparent,
-                rgba(255, 255, 255, 0.6),
-                transparent);
-            transform: translateX(-100%);
-            animation: shine 2.5s infinite;
-          }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(120deg,
+              transparent,
+              rgba(255, 255, 255, 0.6),
+              transparent);
+          animation: shine 2.5s infinite;
         }
       }
 
@@ -1772,6 +1762,7 @@ footer {
       aspect-ratio: 440 / 636;
       margin: 0 auto;
       display: block;
+      height: auto;
 
 
 
@@ -1806,46 +1797,44 @@ footer {
         width: 100%;
 
         img {
+          width: 91%;
           display: block;
           margin: 0 auto;
         }
       }
 
       .header-text-4 {
-        width: 100%;
         position: absolute;
         top: 78%;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        width: 95.5%;
+        display: block;
+        margin: 0 auto;
+        color: white;
+        background: #FFAD4E;
+        font-size: clamp(8px, 5vw, 24px);
+        height: auto;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 10px 18px;
+        border-radius: 35px;
+        box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
 
-
-        a {
-          display: block;
-          margin: 0 auto;
-          color: white;
-          background: #FFAD4E;
-          font-size: clamp(8px, 5vw, 24px);
-          height: auto;
-          text-align: center;
-          font-weight: bold;
-          letter-spacing: 1px;
-          padding: 10px 18px;
-          border-radius: 35px;
-          box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
-          overflow: hidden;
-
-          &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(120deg,
-                transparent,
-                rgba(255, 255, 255, 0.6),
-                transparent);
-            transform: translateX(-100%);
-            animation: shine 2.5s infinite;
-          }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(120deg,
+              transparent,
+              rgba(255, 255, 255, 0.6),
+              transparent);
+          animation: shine 2.5s infinite;
         }
       }
 
@@ -1876,12 +1865,10 @@ footer {
 
 @keyframes shine {
   0% {
-    transform: translateX(-100%);
-    /* left: -100%; */
+    left: -100%;
   }
 
   100% {
-    transform: translateX(100%);
-    /* left: 100%; */
+    left: 100%;
   }
 }
